@@ -2,7 +2,7 @@ import axios from "axios";
 import { completelogout } from "../utils/libs";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://blog-app-mongodb-completed.onrender.com/api",
   withCredentials: true,
 });
 
