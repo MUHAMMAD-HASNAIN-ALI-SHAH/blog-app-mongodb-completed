@@ -12,7 +12,7 @@ app.use(bodyParser.json({ limit: "10mb" }));
 app.use(bodyParser.urlencoded({ limit: "10mb", extended: true }));
 app.use(
   cors({
-    origin: "https://blog-app-hasnain-frontend.vercel.app/",
+    origin: "https://blog-app-hasnain-frontend.vercel.app",
     credentials: true,
   })
 );
