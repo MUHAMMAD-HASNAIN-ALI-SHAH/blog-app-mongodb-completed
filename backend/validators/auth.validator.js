@@ -31,13 +31,6 @@ const registerValidator = async (req, res, next) => {
         .json({ msg: "Username must be between 3 and 16 characters" });
     }
 
-    // Check if the email is less than 20 characters
-    if (email.length > 20) {
-      return res
-        .status(400)
-        .json({ msg: "Email must be less than 20 characters" });
-    }
-
     next();
   } catch (error) {
     console.error("Register Validator Error: " + error.message);
