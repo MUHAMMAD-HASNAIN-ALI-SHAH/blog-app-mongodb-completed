@@ -17,7 +17,7 @@ const addBlog = async (req, res) => {
       title,
       description,
       image: url.secure_url,
-      userID: user._id,
+      userId: user._id,
     });
 
     await blog.save();
